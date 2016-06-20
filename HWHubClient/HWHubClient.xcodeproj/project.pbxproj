@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9E6EB91CD062A12087ED0D8 /* libPods-HWHubClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A82DDEC240A6BD36511EB6 /* libPods-HWHubClient.a */; };
+		ABE689131D16AAF500778C9A /* HWTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE689121D16AAF500778C9A /* HWTabBarViewController.m */; };
+		ABE689161D16AB2900778C9A /* HWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE689151D16AB2900778C9A /* HWNavigationController.m */; };
+		ABE689191D16AE0800778C9A /* HWBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE689181D16AE0800778C9A /* HWBaseTableViewController.m */; };
+		ABE6891C1D179A5900778C9A /* HWDynamicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE6891B1D179A5900778C9A /* HWDynamicTableViewController.m */; };
+		ABE6891F1D179E9A00778C9A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE6891E1D179E9A00778C9A /* Reachability.m */; };
+		ABE689241D17B9E900778C9A /* HWAppCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE689231D17B9E900778C9A /* HWAppCommon.m */; };
 		CA9B4CB21CD243AB005AF65B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B4CB11CD243AB005AF65B /* main.m */; };
 		CA9B4CB51CD243AB005AF65B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B4CB41CD243AB005AF65B /* AppDelegate.m */; };
-		CA9B4CB81CD243AB005AF65B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B4CB71CD243AB005AF65B /* ViewController.m */; };
+		CA9B4CB81CD243AB005AF65B /* HWRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9B4CB71CD243AB005AF65B /* HWRootViewController.m */; };
 		CA9B4CBE1CD243AB005AF65B /* HWHubClient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA9B4CBC1CD243AB005AF65B /* HWHubClient.xcdatamodeld */; };
 		CA9B4CC01CD243AB005AF65B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9B4CBF1CD243AB005AF65B /* Assets.xcassets */; };
 		CA9B4CC31CD243AB005AF65B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9B4CC11CD243AB005AF65B /* LaunchScreen.storyboard */; };
@@ -35,12 +42,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20A82DDEC240A6BD36511EB6 /* libPods-HWHubClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HWHubClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78BEBC41A8B49FC3710D200D /* Pods-HWHubClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWHubClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-HWHubClient/Pods-HWHubClient.release.xcconfig"; sourceTree = "<group>"; };
+		7ABC28989A91A801625B6B03 /* Pods-HWHubClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWHubClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HWHubClient/Pods-HWHubClient.debug.xcconfig"; sourceTree = "<group>"; };
+		ABE6890D1D16937B00778C9A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		ABE689111D16AAF500778C9A /* HWTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWTabBarViewController.h; sourceTree = "<group>"; };
+		ABE689121D16AAF500778C9A /* HWTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWTabBarViewController.m; sourceTree = "<group>"; };
+		ABE689141D16AB2900778C9A /* HWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWNavigationController.h; sourceTree = "<group>"; };
+		ABE689151D16AB2900778C9A /* HWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWNavigationController.m; sourceTree = "<group>"; };
+		ABE689171D16AE0800778C9A /* HWBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWBaseTableViewController.h; sourceTree = "<group>"; };
+		ABE689181D16AE0800778C9A /* HWBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWBaseTableViewController.m; sourceTree = "<group>"; };
+		ABE6891A1D179A5900778C9A /* HWDynamicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWDynamicTableViewController.h; sourceTree = "<group>"; };
+		ABE6891B1D179A5900778C9A /* HWDynamicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWDynamicTableViewController.m; sourceTree = "<group>"; };
+		ABE6891D1D179E9A00778C9A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		ABE6891E1D179E9A00778C9A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		ABE689201D17A2E700778C9A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ABE689221D17B9E900778C9A /* HWAppCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWAppCommon.h; sourceTree = "<group>"; };
+		ABE689231D17B9E900778C9A /* HWAppCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWAppCommon.m; sourceTree = "<group>"; };
 		CA9B4CAD1CD243AB005AF65B /* HWHubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HWHubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9B4CB11CD243AB005AF65B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CA9B4CB31CD243AB005AF65B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CA9B4CB41CD243AB005AF65B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CA9B4CB61CD243AB005AF65B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CA9B4CB71CD243AB005AF65B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CA9B4CB61CD243AB005AF65B /* HWRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWRootViewController.h; sourceTree = "<group>"; };
+		CA9B4CB71CD243AB005AF65B /* HWRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWRootViewController.m; sourceTree = "<group>"; };
 		CA9B4CBD1CD243AB005AF65B /* HWHubClient.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HWHubClient.xcdatamodel; sourceTree = "<group>"; };
 		CA9B4CBF1CD243AB005AF65B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA9B4CC21CD243AB005AF65B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9E6EB91CD062A12087ED0D8 /* libPods-HWHubClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +103,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABE689021D1691D700778C9A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ABE689031D1691D700778C9A /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		ABE689041D1691D700778C9A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ABE689051D1691D700778C9A /* Network */,
+				ABE689111D16AAF500778C9A /* HWTabBarViewController.h */,
+				ABE689121D16AAF500778C9A /* HWTabBarViewController.m */,
+				ABE689141D16AB2900778C9A /* HWNavigationController.h */,
+				ABE689151D16AB2900778C9A /* HWNavigationController.m */,
+				ABE689171D16AE0800778C9A /* HWBaseTableViewController.h */,
+				ABE689181D16AE0800778C9A /* HWBaseTableViewController.m */,
+				ABE6891A1D179A5900778C9A /* HWDynamicTableViewController.h */,
+				ABE6891B1D179A5900778C9A /* HWDynamicTableViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ABE689051D1691D700778C9A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		ABE689061D1691D700778C9A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				ABE6891D1D179E9A00778C9A /* Reachability.h */,
+				ABE6891E1D179E9A00778C9A /* Reachability.m */,
+				ABE689221D17B9E900778C9A /* HWAppCommon.h */,
+				ABE689231D17B9E900778C9A /* HWAppCommon.m */,
+			);
+			name = Utility;
+			path = ViewControllers/Utility;
+			sourceTree = "<group>";
+		};
+		ABE689071D1691D700778C9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5153666469500299783C4AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7ABC28989A91A801625B6B03 /* Pods-HWHubClient.debug.xcconfig */,
+				78BEBC41A8B49FC3710D200D /* Pods-HWHubClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CA9B4CA41CD243AB005AF65B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +175,8 @@
 				CA9B4CCC1CD243AC005AF65B /* HWHubClientTests */,
 				CA9B4CD71CD243AC005AF65B /* HWHubClientUITests */,
 				CA9B4CAE1CD243AB005AF65B /* Products */,
+				B5153666469500299783C4AE /* Pods */,
+				F957483334CCDFE71413F0B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,12 +195,18 @@
 			children = (
 				CA9B4CB31CD243AB005AF65B /* AppDelegate.h */,
 				CA9B4CB41CD243AB005AF65B /* AppDelegate.m */,
-				CA9B4CB61CD243AB005AF65B /* ViewController.h */,
-				CA9B4CB71CD243AB005AF65B /* ViewController.m */,
+				CA9B4CB61CD243AB005AF65B /* HWRootViewController.h */,
+				CA9B4CB71CD243AB005AF65B /* HWRootViewController.m */,
+				ABE689041D1691D700778C9A /* ViewControllers */,
+				ABE689071D1691D700778C9A /* Views */,
+				ABE689021D1691D700778C9A /* Models */,
+				ABE689061D1691D700778C9A /* Utility */,
+				ABE689031D1691D700778C9A /* Vendor */,
 				CA9B4CBF1CD243AB005AF65B /* Assets.xcassets */,
 				CA9B4CC11CD243AB005AF65B /* LaunchScreen.storyboard */,
 				CA9B4CC41CD243AB005AF65B /* Info.plist */,
 				CA9B4CBC1CD243AB005AF65B /* HWHubClient.xcdatamodeld */,
+				ABE6890D1D16937B00778C9A /* PrefixHeader.pch */,
 				CA9B4CB01CD243AB005AF65B /* Supporting Files */,
 			);
 			path = HWHubClient;
@@ -140,6 +238,15 @@
 			path = HWHubClientUITests;
 			sourceTree = "<group>";
 		};
+		F957483334CCDFE71413F0B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABE689201D17A2E700778C9A /* SystemConfiguration.framework */,
+				20A82DDEC240A6BD36511EB6 /* libPods-HWHubClient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +254,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA9B4CDD1CD243AC005AF65B /* Build configuration list for PBXNativeTarget "HWHubClient" */;
 			buildPhases = (
+				D20C9EC2DC3C1EDEE3F96D1C /* 📦 Check Pods Manifest.lock */,
 				CA9B4CA91CD243AB005AF65B /* Sources */,
 				CA9B4CAA1CD243AB005AF65B /* Frameworks */,
 				CA9B4CAB1CD243AB005AF65B /* Resources */,
+				D82213ED1A6F462279730B6D /* 📦 Embed Pods Frameworks */,
+				4C316B696EEB08EF68882350 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +317,7 @@
 				TargetAttributes = {
 					CA9B4CAC1CD243AB005AF65B = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = PVLLUY9V75;
 					};
 					CA9B4CC81CD243AC005AF65B = {
 						CreatedOnToolsVersion = 7.2;
@@ -264,14 +375,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C316B696EEB08EF68882350 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HWHubClient/Pods-HWHubClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D20C9EC2DC3C1EDEE3F96D1C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D82213ED1A6F462279730B6D /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HWHubClient/Pods-HWHubClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CA9B4CA91CD243AB005AF65B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA9B4CB81CD243AB005AF65B /* ViewController.m in Sources */,
+				ABE689191D16AE0800778C9A /* HWBaseTableViewController.m in Sources */,
+				CA9B4CB81CD243AB005AF65B /* HWRootViewController.m in Sources */,
 				CA9B4CBE1CD243AB005AF65B /* HWHubClient.xcdatamodeld in Sources */,
+				ABE689241D17B9E900778C9A /* HWAppCommon.m in Sources */,
+				ABE689161D16AB2900778C9A /* HWNavigationController.m in Sources */,
+				ABE6891C1D179A5900778C9A /* HWDynamicTableViewController.m in Sources */,
+				ABE689131D16AAF500778C9A /* HWTabBarViewController.m in Sources */,
 				CA9B4CB51CD243AB005AF65B /* AppDelegate.m in Sources */,
+				ABE6891F1D179E9A00778C9A /* Reachability.m in Sources */,
 				CA9B4CB21CD243AB005AF65B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,23 +568,37 @@
 		};
 		CA9B4CDE1CD243AC005AF65B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ABC28989A91A801625B6B03 /* Pods-HWHubClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HWHubClient/PrefixHeader.pch";
 				INFOPLIST_FILE = HWHubClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chengergou.HWHubClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		CA9B4CDF1CD243AC005AF65B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78BEBC41A8B49FC3710D200D /* Pods-HWHubClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HWHubClient/PrefixHeader.pch";
 				INFOPLIST_FILE = HWHubClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chengergou.HWHubClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -490,6 +669,7 @@
 				CA9B4CDF1CD243AC005AF65B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA9B4CE01CD243AC005AF65B /* Build configuration list for PBXNativeTarget "HWHubClientTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +678,7 @@
 				CA9B4CE21CD243AC005AF65B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA9B4CE31CD243AC005AF65B /* Build configuration list for PBXNativeTarget "HWHubClientUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +687,7 @@
 				CA9B4CE51CD243AC005AF65B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

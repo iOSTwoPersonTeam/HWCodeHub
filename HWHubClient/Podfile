@@ -1,0 +1,10 @@
+platform :ios, ‘8.0’
+
+target ‘HWHubClient’ do
+
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'Masonry'
+pod 'MBProgressHUD'
+pod 'MJRefresh'
+end
